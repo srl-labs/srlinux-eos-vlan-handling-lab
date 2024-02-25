@@ -1,0 +1,7 @@
+username: admin
+password: NokiaSrl1!
+skip-verify: true
+encoding: json_ietf
+
+targets:
+  clab-vlan2-srl:57400:

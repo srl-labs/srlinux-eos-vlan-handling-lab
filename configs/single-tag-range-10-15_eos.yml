@@ -1,0 +1,19 @@
+updates:
+  - path: "cli:/"
+    value: vlan 10-15
+  - path: "cli:/"
+    value: interface Ethernet 1
+  - path: "cli:/"
+    value: switchport mode trunk
+  - path: "cli:/"
+    value: switchport trunk allowed vlan 10-15
+  - path: "cli:/"
+    value: switchport trunk native vlan tag
+  - path: "cli:/"
+    value: interface Ethernet 10
+  - path: "cli:/"
+    value: switchport mode trunk
+  - path: "cli:/"
+    value: switchport trunk allowed vlan 10-15
+  - path: "cli:/"
+    value: switchport trunk native vlan tag

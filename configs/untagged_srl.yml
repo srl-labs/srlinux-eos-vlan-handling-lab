@@ -1,0 +1,31 @@
+srl_nokia-interfaces:interface:
+  - name: ethernet-1/1
+    admin-state: enable
+    vlan-tagging: true
+    subinterface:
+    - index: 10
+      type: bridged
+      admin-state: enable
+      vlan:
+        encap:
+          untagged: {}
+
+  - name: ethernet-1/10
+    admin-state: enable
+    vlan-tagging: true
+    subinterface:
+    - index: 10
+      type: bridged
+      admin-state: enable
+      vlan:
+        encap:
+          single-tagged:
+            vlan-id: 10
+
+srl_nokia-network-instance:network-instance:
+  - name: bridge-1
+    admin-state: enable
+    type: mac-vrf
+    interface:
+      - name: ethernet-1/1.10
+      - name: ethernet-1/10.10

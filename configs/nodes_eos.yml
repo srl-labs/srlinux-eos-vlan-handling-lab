@@ -1,0 +1,7 @@
+username: admin
+password: admin
+insecure: true
+encoding: ascii
+
+targets:
+  clab-vlan2-ceos:6030:
